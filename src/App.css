@@ -22,3 +22,49 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+
+.flex-form > * {
+  border: 0;
+  border-radius: 0;
+  padding: 10px;
+  background: white;
+  outline: 0;
+  line-height: 50px;
+  font-size: 20px;
+  /* to hid radius on select item*/
+  -webkit-appearance: none;
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.flex-form > *:last-child {
+  border-right: 0;
+}
+
+
+.cover {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-form {
+  display: flex;
+  border: 20px solid rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+input[type="search"] {
+  flex-basis: 500px;
+}
+
+video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: -100;
+  transform: translateX(-50%) translateY(-50%);
+  background-size: cover;
+  transition: 1s opacity;
+}
